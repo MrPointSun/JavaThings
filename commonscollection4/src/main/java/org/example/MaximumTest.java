@@ -1,9 +1,11 @@
 package org.example;
 
+import org.jetbrains.annotations.NotNull;
+
 public class MaximumTest
 {
     // 比较三个值并返回最大值
-    public static <T extends Comparable<T>> T maximum(T x, T y, T z)
+    public static <T extends Comparable<T>> T maximum(T x, @NotNull T y, T z)
     {
         T max = x; // 假设x是初始最大值
         if ( y.compareTo( max ) > 0 ){
